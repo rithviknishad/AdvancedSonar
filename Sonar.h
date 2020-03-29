@@ -44,7 +44,7 @@ public:
 };
 
 template<size_t S>
-class SonarArray : public Sonar
+class SonarArray : protected Sonar
 {
 public:
     float Distances[S];
