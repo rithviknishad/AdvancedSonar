@@ -39,8 +39,8 @@ protected:
 public:
     float Scan() const;
 
-    operator float() const { Scan(); }
-    operator int()   const { Scan(); }
+    operator float() const { return Scan(); }
+    operator int()   const { return Scan(); }
 };
 
 template<size_t S>
